@@ -4,13 +4,13 @@ public class EndageredAnimals implements DatabaseManagement{
     private String name;
     private String age;
 
-//    private String healthy;
-//    private String ill;
-//    private String okay;
-//
-//    private String newborn;
-//    private String young;
-//    private String adult;
+    private String healthy;
+    private String ill;
+    private String okay;
+
+    private String newborn;
+    private String young;
+    private String adult;
 
 
 
