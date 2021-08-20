@@ -24,13 +24,25 @@ Java
 
 Spark 
 
+PostgreSQL
+
 Handlebars 
 
-PostgreSQL 
+Markdown
+
+CSS
 
 Bootstrap
 
-CSS
+
 ## Support and contact details
-ericwathome007@gmail.com
+In case of any concerns you can reach me at ;
+
+beckyj1601@gmail.com
+
+https://github.com/Becka7?tab=repositories
 ### License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+MIT License
+
+Copyright (c) [2021] **Rabecca Nzau**
