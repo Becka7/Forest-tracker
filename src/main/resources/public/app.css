@@ -13,9 +13,6 @@ nav{
     display:flex;
     text-decoration:none;
     color:white;
-
-
-
 }
 button{
     margin-top:2%;
@@ -29,10 +26,16 @@ button{
 button:hover{
 
     background-color:green;
-        color:white;
+    color:white;
 }
 #but1{
     margin-left:100px;
+    background-color:green;
+    color:white;
+}
+#but1:hover{
+    background-color:white;
+    color:green;
 }
 .butto{
     float:left;
