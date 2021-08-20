@@ -1,0 +1,62 @@
+body{
+    font-family: 'Merienda', cursive;
+}
+a{
+    text-decoration:none !important;
+    color:black;
+}
+a:hover{
+    color:green;
+}
+
+nav{
+    display:flex;
+    text-decoration:none;
+    color:white;
+
+
+
+}
+button{
+    background-color:green;
+    color:white;
+    border-radius:20px;
+    border-color:green;
+    float:right;
+    margin-left:20px;
+}
+button:hover{
+    background-color:white;
+    color:green;
+}
+#but1{
+    margin-left:200px;
+}
+.butto{
+    float:left;
+}
+img{
+    float:right;
+    border-radius:50%;
+    margin-right:10%;
+    box-shadow:2px 2px 2px green;
+    height:60vh;
+}
+p{
+    color:green;
+}
+h2{
+    margin-right:20%;
+}
+#top{
+    margin-top:7%;
+    color:green;
+    margin-left:3%;
+    font-size:3em;
+}
+#starter{
+    color:white;
+}
+h3{
+ text-align:center;
+}

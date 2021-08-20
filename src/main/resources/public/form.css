@@ -4,7 +4,7 @@ body
 
 }
 h1{
-    font-family: 'Merienda', cursive;
+   font-family: 'Merienda', cursive;
 }
 #herosd{
     display:flex;
@@ -19,4 +19,13 @@ h1{
 h5{
     border-bottom:2px solid black;
     font-weight:bold;
+}
+img{
+    float:left;
+}
+#from{
+    display:flex;
+}
+form{
+    float:left;
 }

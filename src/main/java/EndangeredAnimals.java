@@ -1,4 +1,3 @@
-
 public class EndangeredAnimals implements DatabaseManagement{
     private int id;
     private String name;
@@ -25,6 +24,7 @@ public class EndangeredAnimals implements DatabaseManagement{
 
     @Override
     public void save() {
+
 
     }
 }
