@@ -17,15 +17,6 @@ public class Animal implements DatabaseManagement {
         mInstance.add(this);
     }
 
-//    public static ArrayList<Animal> getmInstance() {
-//        try (Connection con = DB.sql2o.open()) {
-//            String sql = "SELECT * FROM animals";
-//            return (ArrayList<Animal>) con.createQuery(sql)
-//                    .executeAndFetch(Animal.class);
-//        }
-
-//    }
-
 
     public String getName() {
         return name;
@@ -40,9 +31,13 @@ public class Animal implements DatabaseManagement {
         return age;
     }
 
-//    public void setAge(String age) {
-//        this.age = age;
-//    }
+    public static void setmInstance(ArrayList<Animal> mInstance) {
+        Animal.mInstance = mInstance;
+    }
+
+    public static ArrayList<Animal> getmInstance() {
+        return mInstance;
+    }
 
     public String getHealth() {
         return health;
@@ -74,5 +69,15 @@ public class Animal implements DatabaseManagement {
         }
 
     }
+
+
+//    public static ArrayList<Animal> getmInstance() {
+//        try (Connection con = DB.sql2o.open()) {
+//            String sql = "SELECT * FROM animals";
+//            return (ArrayList<Animal>) con.createQuery(sql)
+//                    .executeAndFetch(Animal.class);
+//        }
+//
+//    }
 
 }
