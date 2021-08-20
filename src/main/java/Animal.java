@@ -61,9 +61,12 @@ public class Animal implements DatabaseManagement {
     @Override
     public void save() {
         try (Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animals (name) VALUES (:name)";
+            String sql = "INSERT INTO animals (name,age,health) VALUES (:name,:age,:health)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
+                    .addParameter("age", this.age)
+                    .addParameter("health", this.health)
+
                     .executeUpdate()
                     .getKey();
         }
@@ -71,13 +74,6 @@ public class Animal implements DatabaseManagement {
     }
 
 
-//    public static ArrayList<Animal> getmInstance() {
-//        try (Connection con = DB.sql2o.open()) {
-//            String sql = "SELECT * FROM animals";
-//            return (ArrayList<Animal>) con.createQuery(sql)
-//                    .executeAndFetch(Animal.class);
-//        }
-//
-//    }
+
 
 }

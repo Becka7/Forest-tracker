@@ -1,9 +1,9 @@
 {{#partial "header"}}
      <link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-                 <link rel='stylesheet' href='/app.css'>
-                 <link rel="preconnect" href="https://fonts.googleapis.com">
-                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                 <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Sigmar+One&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Sigmar+One&display=swap" rel="stylesheet">
+     <link rel='stylesheet' href='/app.css'>
      <link rel='stylesheet' href='/form.css'>
 {{/partial}}
 
@@ -12,7 +12,7 @@
  <div class ="container" id ="starter";>
     <nav>
          <div>
-         <h2><a href ='index.hbs'>Forest Tracker</a></h2>
+         <h2><a href ='index.hbs'>Forest<span> Tracker</span></a></h2>
          </div>
          <div class="butto">
          <button id ="but1"><a href="animals.hbs"/><h3>View Animals</h3></a></button>
@@ -23,25 +23,16 @@
 
       <div id= "animals">
 
-{{!--      {{#if animals}} --}}
-{{!--          {{#each animals}} --}}
-{{!--          <div class="card text-white bg-primary mb-3" style="max-width: 18rem;"> --}}
-{{!--            <div class="card-header"></div> --}}
-{{!--            <div class="card-body"> --}}
-{{!--              <h5 class="card-title">{{name}}</h5> --}}
-{{!--            </div> --}}
-
-{{!--          {{/each}} --}}
-{{!--          {{else}} --}}
          {{#if animals}}
             {{#each animals}}
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card text-white " style="max-width: 18rem;">
                <div class="card-header"></div>
                <div class="card-body">
                   <h5 class="card-title">{{name}}</h5>
                   <p class="card-text">Age:{{age}} </p>
                   <p class="card-text">Health:{{health}} </p>
                   <p class="card-text"> Location:{{location}} </p>
+               </div>
                </div>
                {{/each}}
                {{else}}

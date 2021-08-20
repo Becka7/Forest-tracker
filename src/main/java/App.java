@@ -33,8 +33,17 @@ public class App {
             Animal animals = new Animal(name,age,health);
             model.put("animals" ,animals);
             System.out.println(request.queryParams("name"));
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/animals/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            ArrayList<Animal> animals=Animal.getmInstance();
+            model.put("animals",animals);
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
+
+
 
     }
 }

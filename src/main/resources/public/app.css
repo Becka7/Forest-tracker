@@ -6,7 +6,7 @@ a{
     color:black;
 }
 a:hover{
-    color:green;
+    color:black;
 }
 
 nav{
@@ -18,25 +18,28 @@ nav{
 
 }
 button{
-    background-color:green;
-    color:white;
+    margin-top:2%;
+    background-color:white;
+    color:green;
     border-radius:20px;
     border-color:green;
     float:right;
-    margin-left:20px;
+
 }
 button:hover{
-    background-color:white;
-    color:green;
+
+    background-color:green;
+        color:white;
 }
 #but1{
-    margin-left:200px;
+    margin-left:100px;
 }
 .butto{
     float:left;
+    margin-left:400px;
 }
 img{
-    float:right;
+    float:left;
     border-radius:50%;
     margin-right:10%;
     box-shadow:2px 2px 2px green;
@@ -59,4 +62,12 @@ h2{
 }
 h3{
  text-align:center;
+}
+h1{
+    font-size:2em;
+    text-align:center;
+}
+span{
+    color:green;
+
 }
