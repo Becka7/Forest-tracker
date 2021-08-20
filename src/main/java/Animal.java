@@ -14,6 +14,7 @@ public class Animal implements DatabaseManagement {
         this.name = name;
         this.age = age;
         this.health = health;
+        mInstance.add(this);
     }
 
 //    public static ArrayList<Animal> getmInstance() {
@@ -34,9 +35,6 @@ public class Animal implements DatabaseManagement {
         return id;
     }
 
-    public Animal() {
-        super();
-    }
 
     public String getAge() {
         return age;
@@ -50,9 +48,6 @@ public class Animal implements DatabaseManagement {
         return health;
     }
 
-//    public void setHealth(String health) {
-//        this.health = health;
-//    }
 
     @Override
     public int hashCode() {
